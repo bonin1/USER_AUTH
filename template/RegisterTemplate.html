@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: #333;
+            font-size: 30px;
+            font-weight: 300;
+        }
+        p{
+            margin: 60px 0;
+        }
+        a{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        h3{
+            font-size: 13px;
+            color: #fff;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to <strong>Grupi fuqishem</strong></h1>
+        <p>
+            You have successfully registered to our platform. <br>
+            Please click the link below to activate your account.
+        </p>
+        <a href="{{verificationLink}}"><h3>VERIFY YOUR EMAIL</h3></a>
+    </div>
+</body>
+</html>

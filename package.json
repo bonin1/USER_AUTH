@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "geoip-lite": "^1.4.10",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.5",
+    "ua-parser-js": "^2.0.0"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  }
+}
