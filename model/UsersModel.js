@@ -44,7 +44,24 @@ const Users = db.define('users', {
     passwordResetExpires: {
         type: DataTypes.DATE,
         allowNull: true
-    }
+    },
+    otp: {
+        type: DataTypes.STRING, 
+        allowNull: true
+    },
+    otpExpiresAt: {
+        type: DataTypes.DATE, 
+        allowNull: true
+    },
+    twoFactorEnabled: {
+        type: DataTypes.BOOLEAN, 
+        allowNull: false,
+        defaultValue: false
+    },
+    deviceToken: {
+        type: DataTypes.STRING, 
+        allowNull: true,
+    },
 },{
     freezeTableName: true,
     timestamps: false

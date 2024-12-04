@@ -30,6 +30,10 @@ app.get('/reset-password', (req, res) => {
     res.render('reset-password', { token });
 });
 
+app.get('/otp-verification', (req, res) => {
+    res.render('otp-verification');
+});
+
 
 //---------------------------------------------------------------
 

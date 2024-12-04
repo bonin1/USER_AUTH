@@ -76,7 +76,26 @@ const sendResetEmail = async (toEmail, token, username) => {
     }
 };
 
+const OTPemail = async ({ to, subject, text, html }) => {
+    try {
+        const mailOptions = {
+            from: '"Grupi Fuqishem" <no-reply@grupifuqishem.com>',
+            to,
+            subject,
+            text,
+            html,
+        };
+
+        await transporter.sendMail(mailOptions);
+        console.log(`Email sent to ${to}`);
+    } catch (err) {
+        console.error(`Failed to send email to ${to}: ${err.message}`);
+        throw new Error('Email could not be sent');
+    }
+};
+
 module.exports = {
     sendVerificationEmail,
-    sendResetEmail
+    sendResetEmail,
+    OTPemail
 };
