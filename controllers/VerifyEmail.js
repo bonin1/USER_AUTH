@@ -11,7 +11,7 @@ exports.verifyEmail = async (req, res, next) => {
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
-        const user = await User.findOne({ where: { name: decoded.name } });
+        const user = await User.findOne({ where: { email: decoded.email } });
 
         if (!user) {
             return res.status(404).json({ error: 'User not found' });

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verify OTP</title>
+    <title>OTP Verification</title>
 </head>
 <body>
     <div class="container">
-        <h1>Verify OTP</h1>
-        <form action="/user/2fa" method="POST">
+        <h1>Verify Your OTP</h1>
+        <form action="/user/otp-verification/<%= token %>" method="POST">
             <div class="form-group">
                 <label for="otp">Enter OTP</label>
-                <input type="text" id="otp" name="otp" required minlength="6" maxlength="6" placeholder="123456">
+                <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required>
             </div>
-            <button type="submit">Verify</button>
+            <button type="submit">Verify OTP</button>
         </form>
     </div>
 </body>

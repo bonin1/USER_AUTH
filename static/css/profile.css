@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper-assist{
+    width:1400px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.card > h1{
+    font-size: 1.1rem;
+}
+.card >form> button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #6ab2ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

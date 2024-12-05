@@ -59,12 +59,12 @@ exports.register = async (req, res) => {
         });
 
         // Generate verification token
-        const token = jwt.sign({ name }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
+        const token = jwt.sign({ email }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
 
         // Send verification email
         await sendVerificationEmail(email, name, token);
 
-        return res.status(201).json({ message: 'User registered.' });
+        return res.status(201).json({ message: 'User registered' });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: 'Server error: ' + error.message });

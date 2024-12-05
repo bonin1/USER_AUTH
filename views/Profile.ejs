@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/profile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-assist">
+            <h1>Profile</h1>
+            <div class="card">
+                <h1>
+                    <%= user.name %>
+                    <%= user.lastname %>
+                </h1>
+                <h1>
+                    <%= user.email %>
+                </h1>
+                <form action="/user/forgot-password" method="POST">
+                    <button type="submit" class="btn btn-primary">Request Password Reset</button>
+                </form>
+                <form action="/user/logout" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

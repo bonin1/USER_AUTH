@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <a href="/">Back to Home</a>
+    <form action="/user/login" method="POST">
+        <img src="/static/image/logo.png" alt="">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <div class="remember">
+            <label for="checkbox">Remember me</label>
+            <input type="checkbox" name="rememberMe" id="rememberMe">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

@@ -58,10 +58,6 @@ const Users = db.define('users', {
         allowNull: false,
         defaultValue: false
     },
-    deviceToken: {
-        type: DataTypes.STRING, 
-        allowNull: true,
-    },
 },{
     freezeTableName: true,
     timestamps: false
